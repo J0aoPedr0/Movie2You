@@ -2,6 +2,8 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
+    alias(libs.plugins.hilt.android)
+    kotlin("kapt")
 }
 
 android {
@@ -36,6 +38,7 @@ android {
     }
     buildFeatures {
         compose = true
+        buildConfig = true
     }
 }
 
@@ -49,7 +52,6 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
-    implementation(libs.androidx.navigation.compose)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -58,6 +60,32 @@ dependencies {
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
 
-    //Coroutines
+
+    //ANDROID-ALL
+    implementation(libs.lifecycle.viewmodel.compose)
+    implementation(libs.lifecycle.runtime.compose)
+    //NAVIGATION
+    implementation(libs.androidx.navigation.compose)
+    //COROUTINES
     implementation(libs.coroutines.android)
+
+    //NETWORK
+    implementation(libs.retrofit)
+    implementation(libs.gson)
+    implementation(libs.kotlinx.serialization.json)
+    implementation(libs.logging.interceptor)
+
+    //HILT
+    implementation(libs.hilt)
+    //HILT-NAVIGATION-COMPOSE
+    implementation(libs.hilt.navigation.compose)
+    //HILT-COMPILER
+    kapt(libs.hilt.android.compiler)
+
+    //COIL
+    implementation(libs.coil)
+    implementation(libs.coil.network)
+}
+kapt {
+    correctErrorTypes = true
 }
