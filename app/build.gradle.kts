@@ -71,16 +71,19 @@ dependencies {
 
     //NETWORK
     implementation(libs.retrofit)
-    implementation(libs.gson)
     implementation(libs.kotlinx.serialization.json)
     implementation(libs.logging.interceptor)
+    implementation(libs.gson.converter)
+
 
     //HILT
-    implementation(libs.hilt)
+    //implementation(libs.hilt)
     //HILT-NAVIGATION-COMPOSE
     implementation(libs.hilt.navigation.compose)
     //HILT-COMPILER
     kapt(libs.hilt.android.compiler)
+    //HILT-ANDROID
+    implementation(libs.hilt.android)
 
     //COIL
     implementation(libs.coil)
