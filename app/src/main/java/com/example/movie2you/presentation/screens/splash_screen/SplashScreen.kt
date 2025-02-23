@@ -24,7 +24,7 @@ import kotlinx.coroutines.delay
 fun SplashScreen(navController: NavController) {
     LaunchedEffect(Unit) {
         delay(2000) // Tempo da splash screen
-        navController.navigate(route = Routes.MovieCatalogScreen.route) // Navega para a tela principal
+        navController.navigate(route = Routes.HomeScreen.route) // Navega para a tela principal
     }
 
     Box(

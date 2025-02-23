@@ -13,7 +13,6 @@ import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
-import okhttp3.MediaType.Companion.toMediaType
 import retrofit2.Retrofit
 import javax.inject.Singleton
 
@@ -37,7 +36,6 @@ object MovieModule {
     @Provides
     @Singleton
     fun providerMovieApiService(): MovieApiService {
-        val contentType = "application/json".toMediaType()
         return Retrofit.Builder()
             .baseUrl(Constants.BASE_URL)
             .addConverterFactory(GsonConverterFactory.create())

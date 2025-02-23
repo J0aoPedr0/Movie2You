@@ -2,7 +2,7 @@ package com.example.movie2you.domain.models
 
 data class Movies(
     val backdrop_path: String,
-    val genre_ids: List<String>,
+    val genreIds: List<String?>? = null,
     val id: Int,
     val original_language: String,
     val original_title: String,

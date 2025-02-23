@@ -23,7 +23,7 @@ object GenreConstants {
         37 to "Western"
     )
 
-    fun getGenreNameById(id: Int): String {
+    fun getGenreNameById(id: Comparable<*>): String {
         return genreMap[id] ?: "Unknown"
     }
 }

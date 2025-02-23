@@ -4,5 +4,5 @@ sealed class Routes(val route: String) {
 
 
     data object SplashScreen : Routes(route = "splash_screen")
-    data object MovieCatalogScreen : Routes(route = "movie_catalog_screen")
+    data object HomeScreen : Routes(route = "home_screen")
 }

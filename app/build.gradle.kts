@@ -75,15 +75,13 @@ dependencies {
     implementation(libs.logging.interceptor)
     implementation(libs.gson.converter)
 
-
-    //HILT
-    //implementation(libs.hilt)
+    //HILT-ANDROID
+    implementation(libs.hilt.android)
     //HILT-NAVIGATION-COMPOSE
     implementation(libs.hilt.navigation.compose)
     //HILT-COMPILER
     kapt(libs.hilt.android.compiler)
-    //HILT-ANDROID
-    implementation(libs.hilt.android)
+
 
     //COIL
     implementation(libs.coil)
