@@ -82,6 +82,9 @@ dependencies {
     //HILT-COMPILER
     kapt(libs.hilt.android.compiler)
 
+    //SPLASH_SCREEN
+    implementation(libs.splash.screen)
+
 
     //COIL
     implementation(libs.coil)

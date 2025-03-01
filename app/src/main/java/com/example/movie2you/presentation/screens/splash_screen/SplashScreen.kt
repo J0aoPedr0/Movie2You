@@ -15,17 +15,18 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
+import com.example.design.themes.BackGroundColor
 import com.example.movie2you.R
 import com.example.movie2you.presentation.screens.navigation.Routes
-import com.example.movie2you.presentation.theme.ui.theme.BackGroundColor
 import kotlinx.coroutines.delay
 
 @Composable
 fun SplashScreen(navController: NavController) {
     LaunchedEffect(Unit) {
-        delay(2000) // Tempo da splash screen
-        navController.navigate(route = Routes.HomeScreen.route) // Navega para a tela principal
+        delay(2000)
+        navController.navigate(route = Routes.MoviesScreen.route)
     }
+
 
     Box(
         modifier = Modifier

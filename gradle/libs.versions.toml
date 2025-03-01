@@ -12,6 +12,7 @@ navigationComposeVersion = "2.8.7"
 coroutineVersion = "1.10.1"
 hiltVersion = "2.51.1"
 hiltNavigationCompose = "1.2.0"
+splashScreenVersion = "1.0.1"
 lifeCycleVersion = "2.8.7"
 coilVersion = "3.1.0"
 retrofitVersion = "2.11.0"
@@ -46,6 +47,8 @@ coil = { group = "io.coil-kt.coil3", name = "coil-compose", version.ref = "coilV
 coil-network = { group = "io.coil-kt.coil3", name = "coil-network-okhttp", version.ref = "coilVersion"}
 retrofit = {group = "com.squareup.retrofit2" , name = "retrofit", version.ref = "retrofitVersion"}
 gson-converter = {group = "com.squareup.retrofit2", name = "converter-gson", version.ref = "retrofitVersion"}
+
+splash-screen = {group = "androidx.core",name = "core-splashscreen", version.ref = "splashScreenVersion"}
 
 logging-interceptor = {group = "com.squareup.okhttp3", name = "logging-interceptor", version.ref = "loggingInterceptorVersion"}
 kotlinx-serialization-json = { group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-json", version.ref = "jsonVersion"}
